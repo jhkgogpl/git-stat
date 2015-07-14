@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: statgit Maven Webapp
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Jacky
+Implementation-Vendor-Id: com.asiainfo
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.7.0_65
+Main-Class: ${start-class}
+

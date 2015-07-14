@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>-->
+    <title>Git Stat</title>
+    <link rel="stylesheet" type="text/css" href="git.css">
+</head>
+<body>
+<div id="dailyPanel">
+    <div id="detailMask"></div>
+    <div id="detailStat"></div>
+</div>
+
+<div id="mask"><img src="../img/loading.gif"/></div>
+
+<div class="heading">Git Stat</div>
+
+<hr/>
+
+<header>
+    <select id="method">
+        <option value="1">Today</option>
+        <option value="2">This Week</option>
+        <option value="3">This Month</option>
+        <option value="0">Customer</option>
+    </select>
+    <input id="startDate" type="date" disabled="false">
+    <input id="endDate" type="date" disabled="true">
+    <select id="name" disabled="true" hidden="true">
+        <option>All</option>
+    </select>
+    <span id="btnStat">Query</span>
+    <span id="gitPath"><input id="gitRoot" type="text" placeholder="local git url"/> </span>
+</header>
+
+<section>
+    <div class="title">
+        <!--<span class="title-left">Git Log</span>-->
+        <div class="title-right">
+            <span id="isTable" class="title-right-table">Table</span>
+            <span id="isChart" class="title-right-chart">Grid</span>
+        </div>
+    </div>
+    <div id="tabStat">
+        <table id="tableStat">
+            <thead>
+                <tr>
+                    <td>No</td>
+                    <td>Name</td>
+                    <td>Per(%)</td>
+                    <td>Add</td>
+                    <td>Delete</td>
+                    <td>Files</td>
+                    <td>First Commit</td>
+                    <td>Last Commit</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="chartStat"></div>
+</section>
+
+<hr/>
+
+<footer>E-mail: <a href="mailto:jhkgogpl@163.com">JackyShen</a></footer>
+
+<script src="../lib/echarts/esl.js" type="text/javascript"></script>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="gitstat.js"></script>
+
+</body>
+</html>
